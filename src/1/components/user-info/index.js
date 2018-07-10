@@ -4,12 +4,15 @@ import Avatar from './avatar'
 
 const UserInfo = props => (
   <div className="section user-info">
-    <Avatar avatar={props.data.avatar} />
+    <Avatar avatar="https://avatars3.githubusercontent.com/u/69631?v=4" />
     <br />
     <a className="name" href="https://github.com/facebook">
-      {props.data.name}
+      Facebook
     </a>
-    <Description description={props.data.description} />
+    <Description>
+      We work hard to contribute our work back to the web, mobile, big data, &
+      infrastructure communities. NB: members must have two-factor auth.
+    </Description>
   </div>
 )
 

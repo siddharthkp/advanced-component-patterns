@@ -1,12 +1,7 @@
 import React from 'react'
 
 const Logo = props => (
-  <img
-    className={props.big ? 'logo big' : 'logo'}
-    {...props}
-    src="logo.png"
-    alt="logo"
-  />
+  <img className={props.big ? 'logo big' : 'logo'} src="logo.png" alt="logo" {...props} />
 )
 
 export default Logo

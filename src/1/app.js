@@ -6,7 +6,6 @@ import Repositories from './components/repositories'
 
 class App extends React.Component {
   constructor(props) {
-    console.log(props)
     super(props)
     this.state = { data: props.data }
   }
