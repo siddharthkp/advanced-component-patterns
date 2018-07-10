@@ -3,17 +3,10 @@ import Logo from '../common/logo'
 import smartInput from '../common/smart-input'
 
 class UserForm extends React.Component {
-  constructor() {
-    super()
-    this.state = { username: '' }
-  }
   onSubmit = event => {
     event.preventDefault()
     const username = event.target[0].value
     this.props.onChange(username)
-  }
-  onChange = event => {
-    this.setState({ username: event.target.value })
   }
   render() {
     return (
@@ -21,12 +14,12 @@ class UserForm extends React.Component {
         <Logo big="true" />
         <div>
           <input
-            onChange={this.props.onChange}
+            onChange={this.props.SMART_onChange}
             type="text"
             name="username"
             placeholder="github username"
           />
-          <button disabled={this.props.disabled} type="submit">
+          <button disabled={this.props.SMART_disabled} type="submit">
             See profile
           </button>
         </div>

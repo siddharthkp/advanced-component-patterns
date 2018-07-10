@@ -9,3 +9,4 @@ yarn install / npm install
 2 - Hook up data fetching
 3 - Disable input: Controlled component
 4 - Pull logic into a HOC
+5 - Convert to render props

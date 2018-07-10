@@ -13,8 +13,8 @@ function smartInput(Component) {
       return (
         <Component
           {...this.props}
-          onChange={this.onChange}
-          disabled={this.state.value.length < 3}
+          SMART_onChange={this.onChange}
+          SMART_disabled={this.state.value.length < 3}
         />
       )
     }
