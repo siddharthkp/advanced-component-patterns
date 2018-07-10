@@ -9,7 +9,7 @@ class SmartInput extends React.Component {
     this.setState({ value: event.target.value })
   }
   render() {
-    return this.props.render({
+    return this.props.children({
       onChange: this.onChange,
       disabled: this.state.value.length < 3
     })

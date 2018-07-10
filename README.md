@@ -10,3 +10,4 @@ yarn install / npm install
 3 - Disable input: Controlled component
 4 - Pull logic into a HOC
 5 - Convert to render props
+6 - children as a function
