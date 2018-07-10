@@ -1,6 +1,6 @@
 import React from 'react'
 
-const { Provider, Consumer } = React.createContext({})
+const SmartContext = React.createContext()
 
 class SmartInput extends React.Component {
   constructor() {
@@ -12,17 +12,18 @@ class SmartInput extends React.Component {
   }
   render() {
     return (
-      <Provider
+      <SmartContext.Provider
         value={{
           onChange: this.onChange,
           disabled: this.state.value.length < 3
         }}
       >
         {this.props.children}
-      </Provider>
+      </SmartContext.Provider>
     )
   }
 }
 
 export default SmartInput
-export { Consumer }
+
+export { SmartContext }

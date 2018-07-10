@@ -11,9 +11,6 @@ yarn install / npm install
 4 - Pull logic into a HOC
 5 - Convert to render props
 6 - children as a function
-
----
-
 7 - context API for app + user-info
 8 - compound component for user-form
 9 - context API for smartInput in user-form

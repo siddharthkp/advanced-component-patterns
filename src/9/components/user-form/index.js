@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../common/logo'
-import SmartInput, { SmartContext } from '../common/smart-input'
+import SmartInput from '../common/smart-input'
 
 class UserForm extends React.Component {
   onSubmit = event => {
@@ -12,7 +12,7 @@ class UserForm extends React.Component {
     return (
       <form className="user-form" onSubmit={this.onSubmit} autoComplete="off">
         <SmartInput>
-          <div>{this.props.children}</div>
+          {({ onChange, disabled }) => <div>{this.props.children}</div>}
         </SmartInput>
       </form>
     )
@@ -22,26 +22,18 @@ class UserForm extends React.Component {
 UserForm.Logo = () => <Logo big="true" />
 
 UserForm.Input = props => (
-  <SmartContext.Consumer>
-    {context => (
-      <input
-        onChange={context.onChange}
-        type="text"
-        name="username"
-        placeholder="github username"
-      />
-    )}
-  </SmartContext.Consumer>
+  <input
+    onChange={props.onChange}
+    type="text"
+    name="username"
+    placeholder="github username"
+  />
 )
 
 UserForm.Button = props => (
-  <SmartContext.Consumer>
-    {context => (
-      <button disabled={context.disabled} type="submit">
-        See profile
-      </button>
-    )}
-  </SmartContext.Consumer>
+  <button disabled={props.disabled} type="submit">
+    See profile
+  </button>
 )
 
 UserForm.Helptext = () => (
