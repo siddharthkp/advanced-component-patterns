@@ -1,3 +1,3 @@
 import './style.css'
 
-import './6'
+import './7'
