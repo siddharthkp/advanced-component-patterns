@@ -146,7 +146,8 @@ img.avatar {
   margin: 30px auto;
 }
 
-.user-form label {
+.user-form .helptext {
+  font-size: 14px;
   display: block;
   text-align: left;
   padding: 8px 0;

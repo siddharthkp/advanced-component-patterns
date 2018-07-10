@@ -11,6 +11,8 @@ yarn install / npm install
 4 - Pull logic into a HOC
 5 - Convert to render props
 6 - children as a function
-7 - Compound components
 
-bonus - 8: Context API with render props
+---
+
+7 - context API
+8 - Compound component
