@@ -12,3 +12,5 @@ yarn install / npm install
 5 - Convert to render props
 6 - children as a function
 7 - Compound components
+
+bonus - 8: Context API with render props
