@@ -14,5 +14,6 @@ yarn install / npm install
 
 ---
 
-7 - context API
-8 - Compound component
+7 - context API for app + user-info
+8 - compound component for user-form
+9 - context API for smartInput in user-form
