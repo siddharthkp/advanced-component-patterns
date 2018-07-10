@@ -4,14 +4,15 @@ import Logo from '../common/logo'
 class UserForm extends React.Component {
   constructor() {
     super()
-  }
-  onChange = event => {
-    /* Your code goes here */
+    this.state = { disabled: true }
   }
   onSubmit = event => {
     event.preventDefault()
     const username = event.target[0].value
     this.props.onChange(username)
+  }
+  onChange = event => {
+    this.setState({ disabled: !event.target.value.length })
   }
   render() {
     return (
@@ -24,7 +25,7 @@ class UserForm extends React.Component {
             name="username"
             placeholder="github username"
           />
-          <button disabled={false} type="submit">
+          <button disabled={this.state.disabled} type="submit">
             See profile
           </button>
         </div>
