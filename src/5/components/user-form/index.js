@@ -21,12 +21,12 @@ class UserForm extends React.Component {
         <Logo big="true" />
         <div>
           <input
-            onChange={this.onChange}
+            onChange={this.props.onChange}
             type="text"
             name="username"
             placeholder="github username"
           />
-          <button disabled={this.state.username.length === 0} type="submit">
+          <button disabled={this.props.disabled} type="submit">
             See profile
           </button>
         </div>
