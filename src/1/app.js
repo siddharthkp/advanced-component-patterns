@@ -4,18 +4,20 @@ import UserInfo from './components/user-info'
 import UserForm from './components/user-form'
 import Repositories from './components/repositories'
 
+import data from './data'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { data: props.data }
+    this.state = { data: data }
   }
   render() {
     return (
       <div>
         <Header />
         <UserForm />
-        <UserInfo data={this.props.data} />
-        <Repositories repos={this.props.data.repos} />
+        <UserInfo data={this.state.data} />
+        <Repositories repos={this.state.data.repos} />
       </div>
     )
   }
