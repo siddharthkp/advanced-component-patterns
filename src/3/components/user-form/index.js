@@ -15,7 +15,7 @@ class UserForm extends React.Component {
   }
   render() {
     return (
-      <form className="user-form" onSubmit={this.onSubmit}>
+      <form className="user-form" onSubmit={this.onSubmit} autoComplete="off">
         <Logo big="true" />
         <div>
           <input

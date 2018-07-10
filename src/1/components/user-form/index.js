@@ -4,7 +4,7 @@ import Logo from '../common/logo'
 class UserForm extends React.Component {
   render() {
     return (
-      <form className="user-form">
+      <form className="user-form" autoComplete="off">
         <Logo big="true" />
         <div>
           <input type="text" name="username" placeholder="github username" />
