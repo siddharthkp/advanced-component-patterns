@@ -1,3 +1,3 @@
 import './style.css'
 
-import './bonus/8'
+import './1'
