@@ -14,3 +14,4 @@ yarn install / npm install
 7 - context API for app + user-info
 8 - compound component for user-form
 9 - context API for smartInput in user-form
+10 - show default username on load
